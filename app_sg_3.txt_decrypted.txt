@@ -1,0 +1,134 @@
+<application>
+	<width>640</width>
+	<height>480</height>
+	<icon>103</icon>
+	<caption>Super Granny 3</caption>
+
+	<demo_mode>1</demo_mode>
+	<ask_fullscreen>1</ask_fullscreen>
+	<total_flowers>3647</total_flowers>
+
+	<mixrate>44100</mixrate>
+	<mixbuffer>2048</mixbuffer>
+
+	<install>
+		<command>SlgClientServicesRedists.exe</command>
+		<parameters>/VERYSILENT</parameters>
+	</install>
+
+	<version pre="Steam 1.0" post="" />
+	
+	<progress_erase
+		msg="The game wants to erase your progress data (which is OK if you're creating a new profile or starting a new game, but can also mean a program error if it's happenning unexpectedly, in the middle of the game). If you don't want to allow it, you can exit to Windows. Do you want to exit right now?"
+		caption="Progress Erase"
+		shortcut_active="1"	
+	/>
+	
+	<directories>
+    <data ingamefolder="0" path="Sandlot Games\Super Granny 3"/>
+		<maps path="user_maps"/>
+		<download_maps path="download_maps"/>
+		<profiles path="profiles"/>
+		<previews path="previews"/>
+		<skins path="download_skins"/>
+		<grannys path="download_grannys"/>
+	</directories>
+
+	<server>
+		<certificate>myn#18@24l8a9d33</certificate>
+		<user></user>
+		<pass></pass>
+		<game>1065</game>
+		<company>Sandlot Games</company>
+		<folder>Super Granny 3</folder>
+
+		<from_email>granny3-submit@sandlotgames.com</from_email>
+		<smtp_server>mail.sandlotgames.com</smtp_server>
+		<smtp_login>c3VibWl0QHNhbmRsb3RnYW1lcy5jb20=</smtp_login>
+		<smtp_password>Z3J1bmVya2FrdHVz</smtp_password>
+		<to_email>granny@sandlotgames.com</to_email>
+
+		<to_name>Sandlot Games</to_name>
+		<message_subject>Super Granny 3</message_subject>
+		<message_body1>Super Granny 3 Adventure "</message_body1>
+		<message_body2>" from </message_body2>
+		<message_body3> (</message_body3>
+		<message_body4>).</message_body4>
+
+		<message2>
+		<message_subject>Greetings Super Granny 3 fan!</message_subject>
+			<line01>Greetings Super Granny 3 fan!</line01>
+			<line02></line02>
+			<line03>Thank you for taking the time to create and submit your Super
+			Granny 3 levels. The Sandlot Games team will take a look at the content,
+			and as soon as it is approved for release, we will add it to the
+			downloadable level section of our website. You can find your
+			downloadable levels, if released on
+			http://www.sandlotgames.com/w4/productfreelevels.aspx?pn=1065, as well as
+			find and download levels created by other Super Granny 3 fans.</line03>
+			<line04></line04>
+			<line05>Playing content created by other Super Granny 3 fans is a great
+			way to get ideas about your own levels! To take a look at the Super
+			Granny 3 levels created by other players, visit the User Content section
+			on http://www.sandlotgames.com. In order to play the levels in your
+			game, please follow the directions below:</line05>
+			<line06></line06>
+			<line07>1. Visit the downloadable section of Super Granny 3 on our
+			website.</line07>
+			<line08>2. Select the Adventure Pack you would like and click on the
+			'Download' button.</line08>
+			<line09>3. After the download is complete, follow the instructions to
+			install the levels.</line09>
+			<line10>4. When you are finished, launch the Super Granny 3 game.</line10>
+			<line11>5. Click on 'Play Game' on the main menu.</line11>
+			<line12>6. Next, select 'More Adventures' and click to select the
+			newly installed Adventure Pack.</line12>
+			<line13>7. Click 'Play This Adventure' and enjoy!</line13>
+			<line14>Again, thank you for helping us, and other players, enrich the
+			wonderful world of Super Granny 3; we look forward to receiving more
+			levels from you in the future. And don’t forget to visit
+			http://www.sandlotgames.com and sign up to receive FREE games and game
+			updates.</line14>
+			<line15></line15>
+			<line16>If you wish to opt-out of our using your personal information
+			other than to process any purchase orders, then send an email to
+			support@sandlotgames.com and type “REMOVE” in the subject area.</line16>
+			<line17></line17>
+			<line18>Sandlot Games Corporation</line18>
+			<line19>1725 220th Street SE, Suite 200</line19>
+			<line20>Bothell, WA 98021</line20>
+			<line21>support@sandlotgames.com</line21>
+			<line22></line22>
+			<line23>Sincerely,</line23>
+			<line24></line24>
+			<line25>The Sandlot Games Team</line25>
+		</message2>
+
+	</server>
+
+	<mouse>
+		<image bitmap="assets/graphics/mouse.png" alphamap="assets/graphics/mouse_alpha.png" />
+
+		<arrow x="0" y="0" w="32" h="32" px="5" py="4" />
+		<hand x="32" y="0" w="32" h="32" px="14" py="4" />
+		<stamp x="0" y="32" w="32" h="32" px="13" py="8" />	
+		<wrench x="32" y="32" w="32" h="32" px="13" py="12" />	
+		<eraser x="64" y="32" w="32" h="32" px="18" py="13" />	
+		<gate_key x="32" y="32" w="32" h="32" px="13" py="12" />	
+	</mouse>
+
+	<guids>
+	</guids>
+
+	<loadscreen>
+		<loadcount>1490</loadcount>
+		<background bitmap="assets/graphics/ui/loading_bkg.jpg" />
+		<title bitmap="assets/graphics/ui/title.jpg" alphamap="assets/graphics/ui/title-alpha.png" />
+		<sandlot bitmap="assets/graphics/ui/sandlot-logo.png" alphamap="assets/graphics/ui/sandlot-logo-alpha.png" />
+		<loading_bar bitmap="assets/graphics/ui/loading_bar.png" alphamap="assets/graphics/ui/loading_bar_alpha.png" />
+		<font>
+			<bitmap bitmap="assets/fonts/gill-sans-mt-11.png" alphamap="assets/fonts/gill-sans-mt-11-alpha.png" />
+			<metrics>assets/fonts/gill-sans-mt-11.fm</metrics>
+		</font>
+	</loadscreen>
+</application>

@@ -1,0 +1,604 @@
+<application>
+ <width>800</width>
+ <height>600</height>
+ <icon>101</icon>
+ <caption>Westward</caption>
+ <version>Version 1.03 Encore</version>
+
+ <mixrate>44100</mixrate>
+ <mixbuffer>4096</mixbuffer>
+
+ <install>
+  <command>SlgClientServicesRedists.exe</command>
+  <parameters>/VERYSILENT</parameters>
+ </install>
+
+ <directories>
+  <data ingamefolder="0" path="Sandlot Games\Westward"/>
+  <maps path="user_maps\"/>
+  <download_maps path="download_maps\"/>
+  <profiles path="profiles\"/>
+  <previews path="previews\"/>
+ </directories>
+  
+ <menu_effects>
+   <effect name="menu_falldown_effect" x="90" y="434" alwaysupdate="true"/>
+   <effect name="menu_waterfall_effect" x="12" y="404" alwaysupdate="true"/>
+   <effect name="menu_lake_effect" x="647" y="359" alwaysupdate="true"/>
+   <effect name="menu_lake_effect" x="614" y="384" alwaysupdate="true"/>
+   <effect name="menu_lake_effect" x="597" y="434" alwaysupdate="true"/>
+  </menu_effects>
+
+ <resources>
+  <interestrate>0.10</interestrate>
+  <turntime>30.0</turntime>
+ </resources>
+
+ <fonts>
+  <general>default</general>
+  <taskheader>default</taskheader>
+  <newtask>default</newtask>
+  <task>default</task>
+  <taskhot>resource_alert</taskhot>
+  <tooltip>hudmessages</tooltip>
+ </fonts>
+
+ <loadscreen>
+  <loadcount>1835</loadcount>
+  <texty>375</texty>
+
+  <barempty x="54" y="399">
+   <bitmap>assets/graphics/menu/progressbar_full.jpg</bitmap>
+   <alphamap>assets/graphics/menu/progressbar_full_alpha.png</alphamap>
+  </barempty>
+  
+		<barfilled x="54" y="428">
+			<bitmap>assets/graphics/menu/progressbar_bg.jpg</bitmap>
+			<alphamap>assets/graphics/menu/progressbar_alpha.png</alphamap>
+		</barfilled>
+		<components>
+			<background1>
+		  	<x>0</x>
+				<y>0</y>
+				<image>
+					<bitmap>assets/graphics/menu/slg_splash_bg.jpg</bitmap>
+				</image>
+				<startpercent>0</startpercent>
+				<stoppercent>15</stoppercent>
+				<sound>assets/audio/music/jingle.ogg</sound>
+			</background1>
+
+			<background2>
+				<x>0</x>
+				<y>0</y>
+				<backgroundcolor r="193" g="219" b="250"/>
+				<startpercent>15</startpercent>
+				<stoppercent>30</stoppercent>
+			</background2>
+			<distributor>
+
+				<image>
+					<bitmap>assets/graphics/menu/publisher.png</bitmap>
+					<alphamap>assets/graphics/menu/publisher_alpha.png</alphamap>
+				</image>
+				<startpercent>15</startpercent>
+				<stoppercent>30</stoppercent>
+			</distributor>
+
+			<background3>
+				<x>0</x>
+				<y>0</y>
+				<image>
+					<bitmap>assets/graphics/menu/mainmenu_bg.jpg</bitmap>
+				</image>
+				<startpercent>30</startpercent>
+				<stoppercent>100</stoppercent>
+			</background3>
+
+			<gamelogo>
+				<x>250</x>
+				<y>6</y>
+				<image>
+					<bitmap>assets/graphics/menu/westward_logo.jpg</bitmap>
+					<alphamap>assets/graphics/menu/westward_logo_alpha.png</alphamap>
+				</image>
+				<startpercent>30</startpercent>
+				<stoppercent>100</stoppercent>
+			</gamelogo>
+			<loadbar_background>
+				<x>54</x>
+				<y>399</y>
+				<image>
+					<bitmap>assets/graphics/menu/progressbar_full.jpg</bitmap>
+					<alphamap>assets/graphics/menu/progressbar_full_alpha.png</alphamap>
+				</image>
+				<startpercent>30</startpercent>
+				<stoppercent>100</stoppercent>
+			</loadbar_background>
+		</components>
+	</loadscreen>
+
+ <tips>
+  <text>TIP: You can scroll the map using the arrow keys.</text>
+  <text>TIP: Click and drag the left mouse button to lasso-select a group of characters.</text>
+  <text>TIP: Visit Trading Posts to exchange one kind of resource for another.</text>
+  <text>TIP: Reforming Drunks at the Church won't tie up your Sheriffs and Deputies.</text>
+  <text>TIP: Always shake your boots out before putting them on.</text>
+  <text>TIP: Settlers become Citizens when you find them homes.</text>
+  <text>TIP: Only Citizens can take jobs at your buildings.</text>
+  <text>TIP: You need at least one Ranch before you can build a Sheriff's Office.</text>
+  <text>TIP: A Settler or Citizen has to walk to a construction site to build most buildings.</text>
+  <text>TIP: A Plague can wipe out your entire Food supply, but does not affect production.</text>
+  <text>TIP: Drought will slow the rate at which your town gathers Water.</text>
+  <text>TIP: Famine dramatically slows the rate at which Food is harvested.</text>
+  <text>TIP: Be sure to repair your buildings after a Tornado strikes!</text>
+  <text>TIP: Lumber Mills gather more wood, and from a wider region, than Lumber Camps.</text>
+  <text>TIP: Sheriffs and Deputies can throw Drunks in jail to sober them up.</text>
+  <text>TIP: Drunks will reform if they are taken to a Church.</text>
+  <text>TIP: Water Towers are more expensive than Wells, but hold a lot more Water.</text>
+  <text>TIP: Water Towers reduce the chances of Drought in your town.</text>
+  <text>TIP: Outhouses reduce the chances of Plague in your town.</text>
+  <text>TIP: You don't need to provide Food, Water or housing for Gunslingers.</text>
+  <text>TIP: Don't squat with your spurs on.</text>
+  <text>TIP: Lasso-selecting characters will usually stop them in their tracks.</text>
+  <text>TIP: You can scroll the map using W, A, S, and D.</text>
+  <text>TIP: Hold SHIFT and click the mouse to send your unit to a new location.</text>
+  <text>TIP: Gather only as much food from bushes and trees as you can store.</text>
+  <text>TIP: Gunslingers can do the most damage, but fall more quickly in battle.</text>
+  <text>TIP: Sheriffs are the toughest fighters, but do the least damage.</text>
+  <text>TIP: A Deputy's rifle gives him more range in a fight.</text>
+  <text>TIP: Double-click on the mini-map to jump back into the game.</text>
+  <text>TIP: Pressing TAB will jump from character to character around the map.</text>
+  <text>TIP: Pressing 'M' will bring up the mini-map, and also close it again.</text>
+  <text>FACT: 'Calamity Jane' got her nickname for being cool-headed during a crisis.</text>
+  <text>TIP: Bridges always cost the same no matter how long they are.</text>
+  <text>TIP: Windmills reduce the chance of Famine.</text>
+  <text>TIP: Don't accept wooden nickels.</text>
+  <text>TIP: Windmills increase the rate at which Farms produce Food.</text>
+  <text>TIP: A cactus does not make good toilet paper.</text>
+  <text>TIP: Gazebos and Statues increase tourism, making more Gold for your Town Hall. </text>
+  <text>TIP: Taking out a Bank loan reduces your income while the loan is paid off.</text>
+  <text>TIP: Settlers and Citizens alike will run from any nearby threat.</text>
+  <text>TIP: Blacksmiths can upgrade the production of many resources.</text>
+  <text>TIP: Hotels can house a lot more people in a smaller area.</text>
+  <text>TIP: There is nothing more dangerous than a bear holding a shark.</text>
+  <text>TIP: Ranches require a General Store in order to be built.</text>
+  <text>TIP: Ranches allow you to build a Sheriff's Office.</text>
+  <text>TIP: Citizens working at Ranches make more food than those working at Farms.</text>
+  <text>TIP: Mines make more gold than Mining Camps, but don't offer housing.</text>
+  <text>TIP: Do not take your pet cactus to bed.</text>
+  <text>TIP: Don't grab a bull by the horns; it only makes him angry.</text>
+  <text>TIP: You gotta know when to hold 'em, and know when to fold 'em.</text>
+  <text>TIP: Never get involved in a land war in Asia.</text>
+  <text>TIP: Never go up against a Sicilian when death is on the line.</text>
+  <text>TIP: If you see a bunny surrounded by skeletons, stay away!</text>
+  <text>TIP: Saloons are a great place to kick back or get kicked in the back.</text>
+  <text>TIP: Furs and pelts are worth their weight in Gold.</text>
+  <text>TIP: Dynamite sticks are not to be confused with firecrackers.</text>
+  <text>TIP: Ensure that your settlers have homes.</text>
+  <text>TIP: Bandits are NOT your friends. Ever.</text>
+  <text>TIP: Keep an eye out for buildings that bring in Settlers.</text>
+  <text>TIP: Multiple outhouses may lead to an explosive result.</text>
+  <text>TIP: Hang your horseshoe with the open end up for good luck.</text>
+  <text>TIP: Cowboy boots make great homes for your pet rattlesnake!</text>
+  <text>Fortune Cookie Says: Man who stick nose in punchbowl get punch in nose.</text>
+  <text>Fortune Cookie Says: The Geeks shall inherit the Earth.</text>
+  <text>Fortune Cookie Says: You will succeed at defeating an enemy.</text>
+  <text>Fortune Cookie Says: You will encounter harsh adversaries.</text>
+  <text>Fortune Cookie Says: You need to get out more.</text>
+  <text>Fortune Cookie Says: Am trapped in Wong Foo's Cookie Factory.  SEND HELP.</text>
+  <text>Fortune Cookie Says: Never order a dish that has the word 'surprise' in its name.</text>
+  <text>Fortune Cookie Says: Don't look behind you.  Don't!</text>
+  <text>FACT: Han shot first.</text>
+  <text>FACT: Possums don't play dead, they actually faint from fright.</text>
+  <text>FACT: There is no character named McGowan in this game.</text>
+  <text>TIP: Always ask for a recent photo when you send for a mail order bride.</text>
+	<text>FACT: There really is a Doctor Vitali Vostrikov.</text>
+	<text>TIP: At least two of these tips are false.</text>
+	<text>TIP: Never ride shotgun on a hearse.</text>
+	<text>FACT: No chickens were harmed in the creation of this game.</text>
+	<text>TIP: Enemy characters show up on your minimap.</text>
+
+ </tips>
+
+	<ingameloadscreen>
+		<loadcount>24</loadcount>
+		<texty>375</texty>
+
+		<barfilled x="54" y="428">
+			<bitmap>assets/graphics/menu/progressbar_bg.jpg</bitmap>
+			<alphamap>assets/graphics/menu/progressbar_alpha.png</alphamap>
+		</barfilled>
+		<components>
+			<background>
+				<x>0</x>
+				<y>0</y>
+				<image bitmap="assets/graphics/menu/mainmenu_bg.jpg" />
+			</background>
+			<slg>
+				<x>322</x>
+				<y>485</y>
+				<image>
+					<bitmap>assets/graphics/menu/slg_logo.jpg</bitmap>
+					<alphamap>assets/graphics/menu/slg_logo_alpha.png</alphamap>
+				</image>
+			</slg>
+
+			<gamelogo>
+				<x>250</x>
+				<y>6</y>
+				<image>
+					<bitmap>assets/graphics/menu/westward_logo.jpg</bitmap>
+					<alphamap>assets/graphics/menu/westward_logo_alpha.png</alphamap>
+				</image>
+			</gamelogo>
+			<loadbar_background>
+				<x>54</x>
+				<y>399</y>
+				<image>
+					<bitmap>assets/graphics/menu/progressbar_full.jpg</bitmap>
+					<alphamap>assets/graphics/menu/progressbar_full_alpha.png</alphamap>
+				</image>
+			</loadbar_background>
+		</components>
+
+ </ingameloadscreen>
+
+<log>
+ <eventlog>
+  <x>400</x>
+  <y>170</y>
+  <numlines>3</numlines>
+  <linespacing>30</linespacing>
+  <holdtime>6</holdtime>
+  <fadetime>1</fadetime>
+  <pulsetime>0.5</pulsetime>
+  <numpulses>1</numpulses>
+  <font>hudmessages</font>
+  <pulsefont>resource_pulse</pulsefont>
+  <shadowfont>default</shadowfont>
+  <newlinesound>select</newlinesound>
+  <icons>
+   <check>
+    <bitmap>assets/graphics/hud/icons/taskcheck.jpg</bitmap>
+    <alphamap>assets/graphics/hud/icons/taskcheck_alpha.png</alphamap>
+   </check>
+   <award>
+    <bitmap>assets/graphics/hud/icons/taskaward.jpg</bitmap>
+    <alphamap>assets/graphics/hud/icons/taskaward_alpha.png</alphamap>
+   </award>
+   <employment>
+    <bitmap>assets/graphics/hud/icons/employalert.jpg</bitmap>
+   </employment>
+  </icons>
+ </eventlog>
+ <resourcelog>
+  <ypersec>20</ypersec>
+  <holdtime>2</holdtime>
+  <fadetime>3</fadetime>
+  <pulsetime>1.5</pulsetime>
+  <numpulses>2</numpulses>
+  <goldfont>gold_font</goldfont>
+  <goldicon>
+   <bitmap>assets/graphics/effects/goldcoin.jpg</bitmap>
+   <alphamap>assets/graphics/effects/goldcoin_alpha.png</alphamap>
+  </goldicon>
+  <woodfont>wood_font</woodfont>
+  <woodicon>
+   <bitmap>assets/graphics/effects/wood.jpg</bitmap>
+   <alphamap>assets/graphics/effects/wood_alpha.png</alphamap>
+  </woodicon>
+  <foodfont>orangefont</foodfont>
+  <foodicon>
+   <bitmap>assets/graphics/effects/food.png</bitmap>
+   <alphamap>assets/graphics/effects/food_alpha.png</alphamap>
+  </foodicon>
+  <waterfont>bluefont</waterfont>
+  <watericon>
+   <bitmap>assets/graphics/effects/waterdrop.png</bitmap>
+   <alphamap>assets/graphics/effects/waterdrop_alpha.png</alphamap>
+  </watericon>
+  <pulsefont>resource_pulse</pulsefont>
+  <shadowfont>resource_shadow</shadowfont>
+ </resourcelog>
+ <tasklog>
+  <x>30</x>
+  <y>142</y>
+  <numlines>4</numlines>
+  <linespacing>28</linespacing>
+  <halign>left</halign>
+  <holdtime>8</holdtime>
+  <fadetime>1</fadetime>
+  <pulsetime>0.5</pulsetime>
+  <numpulses>2</numpulses>
+  <background r="240" g="228" b="168" a="230"/>
+  <font>resource_shadow</font>
+  <pulsefont>hudmessages</pulsefont>
+  <shadowfont>hudmessages</shadowfont>
+  <newlinesound>highlight</newlinesound>
+  <icons>
+   <check>
+    <bitmap>assets/graphics/hud/icons/taskcheck.jpg</bitmap>
+    <alphamap>assets/graphics/hud/icons/taskcheck_alpha.png</alphamap>
+   </check>
+   <award>
+    <bitmap>assets/graphics/hud/icons/taskaward.jpg</bitmap>
+    <alphamap>assets/graphics/hud/icons/taskaward_alpha.png</alphamap>
+   </award>
+   <alert>
+    <bitmap>assets/graphics/hud/icons/taskalert.png</bitmap>
+    <alphamap>assets/graphics/hud/icons/taskalert_alpha.png</alphamap>
+   </alert>
+  </icons>
+ </tasklog>
+</log>
+
+ <hintpanel>
+ <framex>629</framex>
+ <framey>58</framey>
+ <textx>629</textx>
+ <texty>58</texty>
+ <textwidth>150</textwidth>
+ </hintpanel>
+
+ <hudmessage>
+  <font>hudmessages</font>
+  <flashfont>disabled</flashfont>
+  <x>10</x>
+  <y>50</y>
+  <alpha>165</alpha>
+  <indent>35</indent>
+  <wrapwidth>700</wrapwidth>
+  <bullet>
+   <bitmap>assets/graphics/hud/bullet.jpg</bitmap>
+   <alphamap>assets/graphics/hud/bullet_alpha.png</alphamap>
+  </bullet>
+  <flashtime>0.8</flashtime>
+  <numflashes>2</numflashes>
+ </hudmessage>
+ <hudroster>
+  <unitfont>default_hud</unitfont>
+  <buildingfont>default_hud</buildingfont>
+  <goodiefont>default_hud</goodiefont>
+  <alpha>100</alpha>
+  <x>780</x>
+  <y>370</y>
+ </hudroster>
+ <hudaction>
+  <successfont>default_hud</successfont>
+  <failfont>default_hud</failfont>
+  <alpha>120</alpha>
+  <mousexoffset>40</mousexoffset>
+  <mouseyoffset>40</mouseyoffset>
+ </hudaction>
+ <minimap>
+  <playerclr r="255" g="255" b="255"/>
+  <neutralclr r="0" g="0" b="255"/>
+  <enemyclr r="255" g="0" b="0"/>
+  <woodclr r="0" g="255" b="0"/>
+  <goldclr r="255" g="255" b="0"/>
+  <cameraclr r="230" g="24" b="24"/>
+  <pulseamount>10</pulseamount>
+  <unittask>
+  	<bitmap>assets\graphics\icons\blue.png</bitmap>
+  	<alphamap>assets\graphics\icons\dot_alpha.png</alphamap>
+  </unittask>
+  <unitfight>
+  	<bitmap>assets\graphics\icons\greendot.png</bitmap>
+  	<alphamap>assets\graphics\icons\dot_alpha.png</alphamap>
+  </unitfight>
+  <unithostile>
+  	<bitmap>assets\graphics\icons\reddot.png</bitmap>
+  	<alphamap>assets\graphics\icons\dot_alpha.png</alphamap>
+  </unithostile>
+  <settlermalepop id="settler_male" id="settler_male2"/>
+  <settlerfemalepop id="settler_female" id="settler_female2"/>
+  <citizenmalepop id="civilian_male" id="civilian_male2"/>
+  <citizenfemalepop id="civilian_female" id="civilian_female2"/>
+  <prospectorpop id="prospector"/>
+  <coveredwagonpop id="covered_wagon"/>
+  <sheriffpop id="sheriff" id="sheriff2"/>
+  <deputypop id="deputy" id="deputy2"/>
+  <gunslingerpop id="gunslinger"/>
+  <mayorpop id="mayor" id="mayor2"/>
+ </minimap>
+
+ <taskscreen>
+  <bullet>
+   <bitmap>
+    <bitmap>assets/graphics/hud/bullet.jpg</bitmap>
+    <alphamap>assets/graphics/hud/bullet_alpha.png</alphamap>
+   </bitmap>
+  </bullet>
+
+  <title_x>25</title_x>
+  <title_y>92</title_y>
+  <title_spacing>16</title_spacing>
+  <num_titles_shown>7</num_titles_shown>
+
+  <step_y>226</step_y>
+  <bullet_x>25</bullet_x>
+  <header_x>25</header_x>
+  <step_x>55</step_x>
+  <hitrect_x>25</hitrect_x>
+  <hitrect_w>759</hitrect_w>
+  <first_task_y>60</first_task_y>
+  <stepbottom_y>420</stepbottom_y>
+  <leading>1</leading>
+  <selected r="128" g="192" b="255" a="128"/>
+  <hot r="197" g="251" b="255" a="255"/>
+ </taskscreen>
+ <lasso sensitivity="30" hothelptime="5.0">
+  <horizontal>
+   <bitmap>assets/graphics/hud/lasso_horizontal.png</bitmap>
+   <alphamap>assets/graphics/hud/lasso_horizontal_alpha.png</alphamap>
+  </horizontal>
+  <vertical>
+   <bitmap>assets/graphics/hud/lasso_vertical.png</bitmap>
+   <alphamap>assets/graphics/hud/lasso_vertical_alpha.png</alphamap>
+  </vertical>
+  <topleft>
+   <xoff>4</xoff>
+   <yoff>2</yoff>
+   <bitmap>assets/graphics/hud/lasso_topleft.png</bitmap>
+   <alphamap>assets/graphics/hud/lasso_topleft_alpha.png</alphamap>
+  </topleft>
+  <topright>
+   <xoff>-4</xoff>
+   <yoff>2</yoff>
+   <bitmap>assets/graphics/hud/lasso_topright.png</bitmap>
+   <alphamap>assets/graphics/hud/lasso_topright_alpha.png</alphamap>
+  </topright>
+
+  <bottomleft>
+   <xoff>4</xoff>
+   <yoff>-2</yoff>
+   <bitmap>assets/graphics/hud/lasso_bottomleft.png</bitmap>
+   <alphamap>assets/graphics/hud/lasso_bottomleft_alpha.png</alphamap>
+  </bottomleft>
+  <bottomright>
+  	<xoff>-14</xoff>
+   	<yoff>-2</yoff>
+   	<bitmap>assets/graphics/hud/lasso_bottomright.png</bitmap>
+   	<alphamap>assets/graphics/hud/lasso_bottomright_alpha.png</alphamap>
+  </bottomright>
+
+ </lasso>
+ <tooltip>
+  <yshift>-2</yshift>
+  <left> 
+   <bitmap>assets/graphics/menu/tooltip_left.jpg</bitmap>
+   <alphamap>assets/graphics/menu/tooltip_left_alpha.png</alphamap>
+  </left>
+  <right> 
+   <bitmap>assets/graphics/menu/tooltip_right.jpg</bitmap>
+   <alphamap>assets/graphics/menu/tooltip_right_alpha.png</alphamap>
+  </right>
+  <center>
+   <bitmap>assets/graphics/menu/tooltip_mid.jpg</bitmap>
+   <alphamap>assets/graphics/menu/tooltip_mid_alpha.png</alphamap>
+  </center>
+ </tooltip>
+ 
+ <tooldrop>
+  <velocity>15</velocity>
+  <acceleration>10</acceleration>
+  <fadetime>2.5</fadetime>
+  <dynamite_sprite>dynamite_toy</dynamite_sprite>
+  <irrigation_sprite>irrigate_toy</irrigation_sprite>
+  <bridge_sprite>bridge_toy</bridge_sprite>
+  <x>735</x>
+  <y>390</y>
+ </tooldrop>
+ 
+ <mouseinput>
+  <comment t="panning and lasso should use different buttons."/>
+  <comment t="if select and execute are the same, you cannot deselect a unit"/>
+  <panning>right</panning>
+  <select>left</select>
+  <lasso>left</lasso>
+  <execute>right</execute>
+  
+  <targetexecute>left</targetexecute>
+  <targetcancel>right</targetcancel>
+  
+  <placebuilding>left</placebuilding>
+  <cancelbuilding>right</cancelbuilding>
+  
+  <usetool>left</usetool>
+  <canceltool>right</canceltool>
+ </mouseinput>
+ <units>
+  <unit_ring>unit_ring</unit_ring>
+  <select_ring>unit_ring_select</select_ring>
+  <unit_damage_ring>unit_ring_damage</unit_damage_ring>
+ </units>
+ <upgrade>
+  <weapons price="100"/>
+ </upgrade>
+ <ordercosts>
+   <order>repair</order>
+   <order>arrest</order>
+   <order>reform</order>
+ </ordercosts>
+ 
+ <areadata>
+  <x>0</x>
+  <y>0</y>
+  <tilesize>40</tilesize>
+  <tilesx>35</tilesx>
+  <tilesy>35</tilesy>
+  <scrollbuffer>0</scrollbuffer>
+  <scrollspeed>300</scrollspeed>
+  <cameraspeed>1000</cameraspeed>
+  <display>
+ <width>800</width>
+ <height>450</height>
+  </display>
+ </areadata>
+
+ <harvestline>
+   <line>harvestline</line>
+   <pulser>harvestline_pulse</pulser>
+   <frequency>0.5</frequency>
+   <buffer>5</buffer>
+ </harvestline>
+ 
+ <buildingplacer>
+   <noplacealpha>220</noplacealpha>
+   <animation>
+     <cancel>snap</cancel>
+     <place>fadein</place>
+   </animation>
+   <speed>
+     <snap>600</snap>
+     <alphatime>0.1</alphatime>
+     <alphachange>25</alphachange>
+   </speed>
+ </buildingplacer>
+ 
+ <disasters>
+   <droughtsign x="343" y="-5"/>
+   <faminesign x="180" y="-5"/>
+ </disasters>
+ 
+ <saveload>
+ 	<ingame_save>savedgames</ingame_save>
+ 	<ingame_load>ingameload</ingame_load>
+ 	<mainmenu_load>main_loadgame</mainmenu_load>
+ </saveload>
+ 
+  <stattracker>
+   <statgold>AddGold</statgold>
+   <statmaxgold>MaxGold</statmaxgold>
+   <statwood>AddWood</statwood>
+   <statmaxwood>MaxWood</statmaxwood>
+   <statfood>AddFood</statfood>
+   <statmaxfood>MaxFood</statmaxfood>
+   <statwater>AddWater</statwater>
+   <statmaxwater>MaxWater</statmaxwater>
+   <statpeople>AddPeople</statpeople>
+   <statmaxpeople>MaxPeople</statmaxpeople>
+   <statbuilding>AddBuilding</statbuilding>
+   <statmaxdrunks>MaxDrunks</statmaxdrunks>
+   <statreformdrunks>ReformDrunk</statreformdrunks>
+   <statlawmenhired>HireLawman</statlawmenhired>
+   <statgunslingerhired>HireGunslinger</statgunslingerhired>
+   <statlawmenlost>LostLawman</statlawmenlost>
+   <statbanditlost>LostBandit</statbanditlost>
+   <statbuildinglost>LostBuilding</statbuildinglost>
+   <statpeoplelost>LostPeople</statpeoplelost>
+   <stattreecut>CutTree</stattreecut>
+   <stattornado>AddTornado</stattornado>
+   <statplague>AddPlague</statplague>
+   <statdrought>AddDrought</statdrought>
+   <statfamine>AddFamine</statfamine>
+   <statfireextinguished>ExtinguishFire</statfireextinguished>
+ </stattracker>
+ 
+ <pathing>
+ <max_edge_follow>200</max_edge_follow>
+ <max_recursion>20</max_recursion>
+ </pathing>
+ 
+</application>
